@@ -1,0 +1,13 @@
+<div class="container-principal">
+    <div class="container-identify">
+        <div class="title">Identificação</div>
+        <form>
+            <br/>
+            <div class="form group">
+                <div class="label">Insira o seu nome abaixo:</div>
+                <input [(ngModel)]="username" class="form-control" type="text" name="nome" id="nome" autocomplete="off">
+            </div>
+            <button (click)="identify()" type="button" class="btn btn-secondary">Confirmar</button>
+        </form>
+    </div>
+</div>

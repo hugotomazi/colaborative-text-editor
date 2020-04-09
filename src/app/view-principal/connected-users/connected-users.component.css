@@ -1,0 +1,41 @@
+.title {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: solid gray 1px;
+    background-color: lightgray;
+    border-radius: 2px;
+    position: relative;
+}
+
+.title>h4 {
+    position: relative;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    top: 20%;
+}
+
+div.content {
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+
+div.content>div.user {
+    padding-top: 1px;
+    width: 100%;
+    height: 30px;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: black solid 1px;
+}
+
+div.content>div.user.active {
+    background-color: red;
+}
+
+div.content>div.user.typing {
+    background-color: yellow;
+}

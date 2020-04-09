@@ -1,16 +1,3 @@
 <div id="background">
-    <div id="container-principal" class="d-flex">
-        <div id="container-lateral-menu">
-            <div class="title">
-                Participantes
-            </div>
-        </div>
-        <div class="conteudo">
-            <ckeditor [editor]="editor" [ngModel]="content" (change)="change($event)" (ready)="onReady($event)"></ckeditor>
-        </div>
-    </div>
-
-    <!-- <div id="lateral-menu" class="col-md-3 col-xl-2 bd-sidebar">
-
-    </div> -->
+    <router-outlet></router-outlet>
 </div>

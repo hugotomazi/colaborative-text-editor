@@ -1,0 +1,8 @@
+<div id="container-principal" class="d-flex">
+    <div id="container-lateral-menu">
+        <app-connected-users></app-connected-users>
+    </div>
+    <div class="conteudo">
+        <ckeditor [disabled]="locked" [editor]="editor" [ngModel]="content" (change)="change($event)" (ready)="onReady($event)"></ckeditor>
+    </div>
+</div>

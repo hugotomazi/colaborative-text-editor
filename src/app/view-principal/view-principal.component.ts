@@ -33,7 +33,7 @@ export class ViewPrincipalComponent implements OnInit {
 
   ngOnInit() {
     if(!this.socketService.username)
-      this.router.navigate(['/login'])
+      this.router.navigate(['/'])
 
     this.socketService.update().subscribe(data => this.content = data);
     this.socketService.typing().subscribe(user => this.locked = (user !== null && user !== this.socketService.username))

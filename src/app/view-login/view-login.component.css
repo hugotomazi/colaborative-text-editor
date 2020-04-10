@@ -27,9 +27,18 @@ div.container-identify>div.title {
     background-color: lightgray;
 }
 
-div.container-identify div.label {
-    margin: auto;
-    max-width: 80%;
+div.container-identify label.label {
+    margin-left: 10%;
+}
+
+div.container-identify>div.title,
+div.container-identify label.label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 div.container-identify input {

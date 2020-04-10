@@ -4,7 +4,7 @@
         <form>
             <br/>
             <div class="form group">
-                <div class="label">Insira o seu nome abaixo:</div>
+                <label for="nome" class="label">Insira o seu nome abaixo:</label>
                 <input [(ngModel)]="username" class="form-control" type="text" name="nome" id="nome" autocomplete="off">
             </div>
             <button (click)="identify()" type="button" class="btn btn-secondary">Confirmar</button>

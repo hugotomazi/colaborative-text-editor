@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import {Injectable} from '@angular/core';
 import * as io from 'socket.io-client';
 import { Observable } from 'rxjs';
@@ -8,9 +9,8 @@ export class SocketService {
     username: string
 
     constructor() {
-        this.socket = io('https://colaborative-text-editor-serve.herokuapp.com/', {transports: ['websocket']})
+        this.socket = io(environment.apiURL, {transports: ['websocket']})
         this.username = null
-        //this.socket = io('http://127.0.0.1:3000/', {transports: ['websocket']})
     }
 
     identify(username: string) {
